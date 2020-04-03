@@ -44,7 +44,7 @@ controller.upload_file_ClientModal =(req, res, next) => {
         });
     }
     controller.create_a_ClientModal = function(req,res){
-        console.log('saving new client" ,req.body);
+        console.log('saving new client' ,req.body);
         var new_ClientModal = new ClientModal(req.body);
         console.log(req.image);
         new_ClientModal.save(function(err,cm){
